@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">CUSTOMER MANAGEMENT SYSTEM</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <!-- Main Section -->
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">New Customer</h2>
+                <span class="text-light"> Use the below form to create a new customer</span>
+            </div>
+
+            <!-- Form Handling -->
+            <form id="update_user" method="POST">
+                <div class="new_user">
+                    <div class="form-group">
+                        <label for="name" class="text-light">Name</label>
+                        <input type="hidden" name="id" value="">
+                        <input type="text" name="name" value="" placeholder="Enter name">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="Email" class="text-light">Email</label>
+                       
+                        <input type="text" name="email" value="" placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender" class="text-light">Gender</label>
+                        <div class="radio inline">
+
+                            <input type="radio" name="gender" id="male" value="Male" >
+                        <label for="male" class="radio-label">Male</label>
+
+                        </div>
+
+                        <div class="radio inline">
+
+                            <input type="radio" name="gender" id="female" value="Female" >
+                        <label for="female" class="radio-label">Female</label>
+
+                        </div>
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender" class="text-light">Status</label>
+                        <div class="radio inline">
+
+                            <input type="radio" name="status" value="active" id="active" >
+                        <label for="active" class="radio-label">Active</label>
+
+                        </div>
+
+                        <div class="radio inline">
+
+                            <input type="radio" name="status" value="inactive" id="inactive" >
+                        <label for="inactive" class="radio-label">Inactive</label>
+
+                        </div>
+                        
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">
+                        Save
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+
+
+        </div>
+    </main>
+    <!-- /Main Section -->
+
+
+</body>
+</html>
