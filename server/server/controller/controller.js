@@ -23,7 +23,8 @@ export const create = (req, res) => {
 
 customer.save()
     .then((data) => {
-      res.send(data); // Send the saved data as response
+    //   res.send(data); // Send the saved data as response
+    res.redirect("/add-user")
     })
     .catch((err) => {
       res.status(500).send({ message: err.message || "Some error occurred while creating the Customer" });
